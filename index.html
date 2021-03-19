@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 5</title>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        h1 {margin-bottom: 30px;}
+        label {font-weight: bold;}
+        input, select {margin-bottom: 10px;}
+        form {padding: 20px;}
+        form {
+            border: solid 2px orange;
+            background-color: lightgrey;
+            width:33%;  
+        }
+        
+    </style>
+</head>
+<body class="mt-2 ml-4">
+    <h1>Employee Management System</h1>
+    <form id="empForm">
+    <div class="form-group ">
+         <label for="id">8-Digit Employee ID</label>
+         <input type="text" id ="id" name="employee_id"  required maxlength ="8">
+         
+         <label for="name">Full Name</label>
+         <input type="text" id="name" name="name" required>
+         
+         <label for="ext">4-Digit Extension</label>
+         <input type="text" id="text" name="extension" required maxlength= "4">
+          
+         <label for="email">E-mail</label>
+         <input type="email" id="email" name="email" required>
+         
+         <label for="department">Department</label>
+         <select  id="department" name="user_department" required>
+         <option value="administration">Administrative</option>
+         <option value="enginering">Engineering</option>
+         <option value="executive">Executive</option>
+         <option value="marketing">Marketing</option>
+         <option value="quality_assirance">Quality Assurance</option>
+         <option value="sales">Sales</option>
+        </select>
+         <button class="btn btn-primary" type="submit" id ="submit">Add Employee </button>
+        </div>
+    </form>
+   
+</body>
+</html>
